@@ -7,6 +7,22 @@ situations:
     ecology: 早睡早起的工作节奏比熬夜更可持续、低耗能模式验证了疲劳应对策略、写小说的无意义感反复出现、整合带来清晰感作为对冲机制。
     frame: 将心理调节理解为一个"元意图"——它不直接驱动某个领域的工作，而是保障其他所有意图能够持续运作的基础条件，无意义感是高压探索的副产品。
     dynamics: 从早睡早起的积极节奏尝试，到低耗能策略应对疲劳，再到无意义感的反复出现与整合感的正向对冲，是一条贯穿全周的状态线索。
+  relations:
+  - source: health
+    target: think
+    relation_type: support
+    confidence: high
+    description: 健康作为元意图保障认知能力可持续，使人机辩论与意图工程的高强度认知工作得以持续运作
+  - source: health
+    target: org
+    relation_type: support
+    confidence: high
+    description: 健康为组织危机应对提供基础精力保障，整合带来清晰感的对冲机制让创始人有心理空间处理团队韧性压力测试
+  - source: health
+    target: org
+    relation_type: conflict
+    confidence: medium
+    description: 健康意图要求低耗能节奏和意义维护，而组织危机独占当周首要关注，高强度应急响应与身心可持续需求争夺同一认知情感资源
 intentions:
 - id: a71ec650-927b-47f1-a891-bea6dc92d3c1
   title: 调节工作节奏与维护心理可持续性
@@ -66,19 +82,11 @@ schemas:
   - id: c2d3e4f5-a6b7-8901-def2-345678901234
     belief: 高压探索必须牺牲健康
     fact: 元意图保障可维持长期产出
-situation_relations:
-- source: health
-  target: think
-  relation_type: support
-  confidence: high
-  description: 健康作为元意图保障认知能力可持续，使人机辩论与意图工程的高强度认知工作得以持续运作
-- source: health
-  target: org
-  relation_type: support
-  confidence: high
-  description: 健康为组织危机应对提供基础精力保障，整合带来清晰感的对冲机制让创始人有心理空间处理团队韧性压力测试
-- source: health
-  target: org
-  relation_type: conflict
-  confidence: medium
-  description: 健康意图要求低耗能节奏和意义维护，而组织危机独占当周首要关注，高强度应急响应与身心可持续需求争夺同一认知情感资源
+thoughts:
+- 2026-06-01.md
+- 2026-06-02.md
+- 2026-06-03.md
+- 2026-06-04.md
+- 2026-06-05.md
+- 2026-06-06.md
+- 2026-06-07.md

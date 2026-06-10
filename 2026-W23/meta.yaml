@@ -7,6 +7,12 @@ situations:
     ecology: 标准化职能被合并回元职能、缩写从三套规则归并为两套、边界稳定清晰作为 1.0 标志、元智能成熟度直接体现系统成熟度。
     frame: 将标准化理解为元智能成熟度的自然产出而非一次性工作——标准化的终点不是规则文档，而是系统自我维护的元能力。
     dynamics: 从标准化职能的归属问题出发，经过缩写规则归并的具体操作，收敛到 1.0 标准的定义，是一个完整的推理链条。
+  relations:
+  - source: meta
+    target: infra
+    relation_type: support
+    confidence: medium
+    description: 元智能的标准化治理方案（合并冗余规则、系统自我维护）直接解决基础设施面临的工具链归属不清和架构边界模糊问题，从被动防守升级为主动设计
 intentions:
 - id: 9ba11e9d-89ae-4018-9916-4fc436ec68c0
   title: 确立标准化与元智能的治理体系
@@ -66,9 +72,11 @@ schemas:
   - id: f5a6b7c8-d9e0-1234-6789-012345678901
     belief: 标准化是终点工作
     fact: 标准化是元智能的自然产出
-situation_relations:
-- source: meta
-  target: infra
-  relation_type: support
-  confidence: medium
-  description: 元智能的标准化治理方案（合并冗余规则、系统自我维护）直接解决基础设施面临的工具链归属不清和架构边界模糊问题，从被动防守升级为主动设计
+thoughts:
+- 2026-06-01.md
+- 2026-06-02.md
+- 2026-06-03.md
+- 2026-06-04.md
+- 2026-06-05.md
+- 2026-06-06.md
+- 2026-06-07.md

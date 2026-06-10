@@ -7,6 +7,12 @@ situations:
     ecology: 写作云原型刚发现、碎片待整合、契约测试作为前后端融合入口、人物驱动实验成功替代旧方案、母题合并到故事作为本体。
     frame: 将写作云建设理解为从原型验证到框架成型的迭代过程——3R 方法论（Review/Reflection/Rewrite）提供结构，母题和风格的范畴关系提供本体，整合的力量推动上升循环。
     dynamics: 从原型发现到碎片整合与契约测试，再到叙事工程框架成型，母题合并到故事、风格重新定义，贯穿一周的持续迭代。
+  relations:
+  - source: write
+    target: product
+    relation_type: support
+    confidence: medium
+    description: 写作云的叙事工程框架（3R方法论、母题与风格本体关系）为可编辑阅读器提供了具体的创作场景和内容实验素材，范式关键词（框架/边界/迭代）在两者Frame中共现
 intentions:
 - id: 17a23847-5e4f-41d2-9176-0e4ff1796d2d
   title: 打磨写作云与叙事工程框架
@@ -66,9 +72,11 @@ schemas:
   - id: d9e0f1a2-b3c4-5678-0123-456789012345
     belief: 框架可一次性建成
     fact: 需要从原型迭代成型
-situation_relations:
-- source: write
-  target: product
-  relation_type: support
-  confidence: medium
-  description: 写作云的叙事工程框架（3R方法论、母题与风格本体关系）为可编辑阅读器提供了具体的创作场景和内容实验素材，范式关键词（框架/边界/迭代）在两者Frame中共现
+thoughts:
+- 2026-06-01.md
+- 2026-06-02.md
+- 2026-06-03.md
+- 2026-06-04.md
+- 2026-06-05.md
+- 2026-06-06.md
+- 2026-06-07.md

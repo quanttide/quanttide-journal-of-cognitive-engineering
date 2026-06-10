@@ -7,6 +7,27 @@ situations:
     ecology: 默认日志作为 POC 入口效果显著、AI 补全器模式减少洞察发现压力、低耗能状态下维持产出的策略可行、整合的力量驱动上升循环。
     frame: 将研发探索理解为人类提供洞察 + AI 补全整合的协作循环——POC 是发现的手段，整合是收敛的机制，低耗能模式验证了系统自动化程度的试金石。
     dynamics: 从默认日志做 POC 的范式发现，到疲劳状态下利用 AI 补全的低耗能策略，再到整合的力量作为上升循环的驱动力，从操作层面逐步抽象为方法论反思。
+  relations:
+  - source: innov
+    target: business
+    relation_type: support
+    confidence: high
+    description: 商务拓展的Frame明确宣称"商业模式探索是商业领域的POC"，创新管理的POC范式直接为商务验证提供方法论和验证手段（POC/章程/原型），两个Schema的entities高度同构
+  - source: innov
+    target: meta
+    relation_type: conflict
+    confidence: medium
+    description: 创新管理的快速POC和低耗能模式产生大量新实体和变化，与元职能的标准化和规则归并需求在节奏上冲突——速度与秩序、探索与收敛之间的固有矛盾
+  - source: innov
+    target: write
+    relation_type: trigger
+    confidence: medium
+    description: 创新管理通过POC验证成功（"默认日志作为POC入口效果显著"）驱动整合力量，触发叙事工程从碎片积累到框架成型的上升循环
+  - source: innov
+    target: product
+    relation_type: trigger
+    confidence: medium
+    description: 创新管理周期中发现AI表达日益多样化并超越传统文档边界，触发产品研发对可编辑阅读器和块编辑器等新交互范式的探索需求
 intentions:
 - id: a7edfdc7-94a6-40c6-8a9a-d8f551c059f0
   title: 建立以 POC 为核心的快速探索范式
@@ -92,24 +113,11 @@ schemas:
   - id: e4f5a6b7-c8d9-0123-f567-890123456788
     belief: AI整合完成后人类可以彻底退出
     fact: AI整合完成仍需人类审阅把关
-situation_relations:
-- source: innov
-  target: business
-  relation_type: support
-  confidence: high
-  description: 商务拓展的Frame明确宣称"商业模式探索是商业领域的POC"，创新管理的POC范式直接为商务验证提供方法论和验证手段（POC/章程/原型），两个Schema的entities高度同构
-- source: innov
-  target: meta
-  relation_type: conflict
-  confidence: medium
-  description: 创新管理的快速POC和低耗能模式产生大量新实体和变化，与元职能的标准化和规则归并需求在节奏上冲突——速度与秩序、探索与收敛之间的固有矛盾
-- source: innov
-  target: write
-  relation_type: trigger
-  confidence: medium
-  description: 创新管理通过POC验证成功（"默认日志作为POC入口效果显著"）驱动整合力量，触发叙事工程从碎片积累到框架成型的上升循环
-- source: innov
-  target: product
-  relation_type: trigger
-  confidence: medium
-  description: 创新管理周期中发现AI表达日益多样化并超越传统文档边界，触发产品研发对可编辑阅读器和块编辑器等新交互范式的探索需求
+thoughts:
+- 2026-06-01.md
+- 2026-06-02.md
+- 2026-06-03.md
+- 2026-06-04.md
+- 2026-06-05.md
+- 2026-06-06.md
+- 2026-06-07.md
