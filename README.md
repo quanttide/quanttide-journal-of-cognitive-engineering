@@ -1,1 +1,1 @@
-# Quanttide Journal of Cognitive Engineering
+# 量潮认知工程日志
