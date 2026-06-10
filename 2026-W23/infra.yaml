@@ -1,3 +1,40 @@
+schemas:
+- usage: 适用于技术负责人设计基础设施策略时参考
+  entities:
+  - name: 基础设施
+    attributes:
+    - 备份策略
+    - 工具链归属
+    - 架构边界
+  - name: 治理体系
+    attributes:
+    - 标准化
+    - 自动化
+    - 分工
+  causals:
+  - condition: 被动防守备份且工具链归属不清
+    outcome: 数据丢失风险和维护负担增加
+  - condition: 主动设计体系
+    outcome: 安全可靠平台
+  boundaries:
+  - 适用于多云端环境
+  - 排除单机简单场景
+  - 需要至少三个实例才进入抽象层
+  properties:
+  - key: 治理方式
+    value: 主动设计
+  dynamics:
+  - key: 抽象风险
+    value: 随复杂度递增
+  mappings:
+  - intent: 防数据丢失
+    action: 建立自动化备份
+  - intent: 理清工具链归属
+    action: 标准化治理
+  biases:
+  - id: d3e4f5a6-b7c8-9012-ef45-678901234567
+    belief: 备份越多越安全
+    fact: 体系化治理比堆叠备份更有效
 situations:
 - id: b2c3d4e5-f6a7-8901-bcde-f12345678901
   name: infra
@@ -60,43 +97,6 @@ intentions:
     name: low
     label: 低
     description: code/infra/devops 分工模型已初步确立
-schemas:
-- usage: 适用于技术负责人设计基础设施策略时参考
-  entities:
-  - name: 基础设施
-    attributes:
-    - 备份策略
-    - 工具链归属
-    - 架构边界
-  - name: 治理体系
-    attributes:
-    - 标准化
-    - 自动化
-    - 分工
-  causals:
-  - condition: 被动防守备份且工具链归属不清
-    outcome: 数据丢失风险和维护负担增加
-  - condition: 主动设计体系
-    outcome: 安全可靠平台
-  boundaries:
-  - 适用于多云端环境
-  - 排除单机简单场景
-  - 需要至少三个实例才进入抽象层
-  properties:
-  - key: 治理方式
-    value: 主动设计
-  dynamics:
-  - key: 抽象风险
-    value: 随复杂度递增
-  mappings:
-  - intent: 防数据丢失
-    action: 建立自动化备份
-  - intent: 理清工具链归属
-    action: 标准化治理
-  biases:
-  - id: d3e4f5a6-b7c8-9012-ef45-678901234567
-    belief: 备份越多越安全
-    fact: 体系化治理比堆叠备份更有效
 thoughts:
 - 2026-06-01.md
 - 2026-06-02.md

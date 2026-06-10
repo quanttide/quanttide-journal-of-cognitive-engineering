@@ -1,3 +1,38 @@
+schemas:
+- usage: 适用于认知工程研究和工具设计时参考
+  entities:
+  - name: 人类意图
+    attributes:
+    - 驱动
+    - 反馈
+  - name: 辩论
+    attributes:
+    - 收敛
+    - 章程生成
+  causals:
+  - condition: 人类反馈打破AI局部最优
+    outcome: 辩论收敛
+  - condition: 辩论产出章程
+    outcome: 获得结构化知识
+  boundaries:
+  - 适用于人机协同
+  - 排除单机推理
+  - 需要以章程为辩论目标
+  properties:
+  - key: 收敛机制
+    value: 人类反馈打破局部最优
+  dynamics:
+  - key: 收敛速度
+    value: 随反馈质量提升
+  mappings:
+  - intent: 发现意图
+    action: 进行人机辩论
+  - intent: 生成章程
+    action: 将辩论产物结构化
+  biases:
+  - id: c8d9e0f1-a2b3-4567-9012-345678901234
+    belief: AI可自行收敛到最优
+    fact: 人类反馈是打破框架的关键
 situations:
 - id: d4e5f6a7-b8c9-0123-defa-234567890123
   name: think
@@ -70,41 +105,6 @@ intentions:
     name: high
     label: 高
     description: 核心假设尚未被大规模验证，POC范式与结构化收敛存在张力
-schemas:
-- usage: 适用于认知工程研究和工具设计时参考
-  entities:
-  - name: 人类意图
-    attributes:
-    - 驱动
-    - 反馈
-  - name: 辩论
-    attributes:
-    - 收敛
-    - 章程生成
-  causals:
-  - condition: 人类反馈打破AI局部最优
-    outcome: 辩论收敛
-  - condition: 辩论产出章程
-    outcome: 获得结构化知识
-  boundaries:
-  - 适用于人机协同
-  - 排除单机推理
-  - 需要以章程为辩论目标
-  properties:
-  - key: 收敛机制
-    value: 人类反馈打破局部最优
-  dynamics:
-  - key: 收敛速度
-    value: 随反馈质量提升
-  mappings:
-  - intent: 发现意图
-    action: 进行人机辩论
-  - intent: 生成章程
-    action: 将辩论产物结构化
-  biases:
-  - id: c8d9e0f1-a2b3-4567-9012-345678901234
-    belief: AI可自行收敛到最优
-    fact: 人类反馈是打破框架的关键
 thoughts:
 - 2026-06-01.md
 - 2026-06-02.md

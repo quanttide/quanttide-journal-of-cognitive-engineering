@@ -1,3 +1,38 @@
+schemas:
+- usage: 适用于产品经理管理框架演化时参考
+  entities:
+  - name: 写作云
+    attributes:
+    - 原型
+    - 框架
+  - name: 方法论
+    attributes:
+    - 3R
+    - 本体关系
+  causals:
+  - condition: 原型验证可行
+    outcome: 框架成型
+  - condition: 整合力量驱动
+    outcome: 上升循环推进
+  boundaries:
+  - 适用于叙事工程
+  - 排除非结构化写作
+  - 需要足够碎片积累后才能整合
+  properties:
+  - key: 成长模式
+    value: 从原型迭代成型
+  dynamics:
+  - key: 迭代周期
+    value: 随整合加速
+  mappings:
+  - intent: 打磨写作云
+    action: 从原型到框架迭代
+  - intent: 驱动上升循环
+    action: 利用整合力量
+  biases:
+  - id: d9e0f1a2-b3c4-5678-0123-456789012345
+    belief: 框架可一次性建成
+    fact: 需要从原型迭代成型
 situations:
 - id: c3d4e5f6-a7b8-9012-cdef-123456789012
   name: write
@@ -37,41 +72,6 @@ intentions:
     name: medium
     label: 中
     description: 叙事工程的结构化与创作的自由本质之间存在张力
-schemas:
-- usage: 适用于产品经理管理框架演化时参考
-  entities:
-  - name: 写作云
-    attributes:
-    - 原型
-    - 框架
-  - name: 方法论
-    attributes:
-    - 3R
-    - 本体关系
-  causals:
-  - condition: 原型验证可行
-    outcome: 框架成型
-  - condition: 整合力量驱动
-    outcome: 上升循环推进
-  boundaries:
-  - 适用于叙事工程
-  - 排除非结构化写作
-  - 需要足够碎片积累后才能整合
-  properties:
-  - key: 成长模式
-    value: 从原型迭代成型
-  dynamics:
-  - key: 迭代周期
-    value: 随整合加速
-  mappings:
-  - intent: 打磨写作云
-    action: 从原型到框架迭代
-  - intent: 驱动上升循环
-    action: 利用整合力量
-  biases:
-  - id: d9e0f1a2-b3c4-5678-0123-456789012345
-    belief: 框架可一次性建成
-    fact: 需要从原型迭代成型
 thoughts:
 - 2026-06-01.md
 - 2026-06-02.md

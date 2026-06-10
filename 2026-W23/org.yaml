@@ -1,3 +1,41 @@
+schemas:
+- usage: 适用于创始人在组织转型期做决策时参考
+  entities:
+  - name: 团队
+    attributes:
+    - 韧性
+    - 人治温度
+  - name: 制度
+    attributes:
+    - 法治
+    - 标准化
+  causals:
+  - condition: 依赖人治
+    outcome: 组织温度高但脆弱
+  - condition: 建立制度且保留弹性
+    outcome: 韧性增强且温度不骤降
+  boundaries:
+  - 适用于中小型组织（5-50人）
+  - 排除成熟大企业
+  - 需要创始人对组织温度有敏感性
+  properties:
+  - key: 转型方式
+    value: 同步推进
+  dynamics:
+  - key: 温度损失速率
+    value: 随制度化速度递增
+  mappings:
+  - intent: 应对人员流失
+    action: 建立反脆弱机制
+  - intent: 文化转型
+    action: 法治与人治同步推进
+  biases:
+  - id: a6b7c8d9-e0f1-2345-7890-123456789012
+    belief: 招人补位即可解决
+    fact: 制度化才是根本但需保留温度
+  - id: a6b7c8d9-e0f1-2345-7890-123456789013
+    belief: 制度化必然失去温度
+    fact: 温度损失可通过叙事和文化机制对冲
 situations:
 - id: a1b2c3d4-e5f6-7890-abcd-ef1234567890
   name: org
@@ -65,44 +103,6 @@ intentions:
     name: high
     label: 高
     description: 中间态的具体形态尚未明确，可能通过意图工程间接实现
-schemas:
-- usage: 适用于创始人在组织转型期做决策时参考
-  entities:
-  - name: 团队
-    attributes:
-    - 韧性
-    - 人治温度
-  - name: 制度
-    attributes:
-    - 法治
-    - 标准化
-  causals:
-  - condition: 依赖人治
-    outcome: 组织温度高但脆弱
-  - condition: 建立制度且保留弹性
-    outcome: 韧性增强且温度不骤降
-  boundaries:
-  - 适用于中小型组织（5-50人）
-  - 排除成熟大企业
-  - 需要创始人对组织温度有敏感性
-  properties:
-  - key: 转型方式
-    value: 同步推进
-  dynamics:
-  - key: 温度损失速率
-    value: 随制度化速度递增
-  mappings:
-  - intent: 应对人员流失
-    action: 建立反脆弱机制
-  - intent: 文化转型
-    action: 法治与人治同步推进
-  biases:
-  - id: a6b7c8d9-e0f1-2345-7890-123456789012
-    belief: 招人补位即可解决
-    fact: 制度化才是根本但需保留温度
-  - id: a6b7c8d9-e0f1-2345-7890-123456789013
-    belief: 制度化必然失去温度
-    fact: 温度损失可通过叙事和文化机制对冲
 thoughts:
 - 2026-06-01.md
 - 2026-06-02.md

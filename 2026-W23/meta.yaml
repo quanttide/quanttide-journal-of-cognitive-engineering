@@ -1,3 +1,38 @@
+schemas:
+- usage: 适用于治理者评估系统成熟度时参考
+  entities:
+  - name: 元智能
+    attributes:
+    - 标准化
+    - 自我维护
+  - name: 系统
+    attributes:
+    - 成熟度
+    - 规则依赖
+  causals:
+  - condition: 元智能成熟
+    outcome: 系统自我维护
+  - condition: 元智能不成熟
+    outcome: 规则依赖人工维护
+  boundaries:
+  - 适用于系统治理体系
+  - 排除一次性规则制定
+  - 需要系统运行至少三个月有足够演化数据
+  properties:
+  - key: 治理目标
+    value: 系统自我维护
+  dynamics:
+  - key: 成熟度演化
+    value: 随迭代递增
+  mappings:
+  - intent: 建立标准化
+    action: 归并冗余规则集
+  - intent: 提升系统成熟度
+    action: 培养元智能而非推动标准化本身
+  biases:
+  - id: f5a6b7c8-d9e0-1234-6789-012345678901
+    belief: 标准化是终点工作
+    fact: 标准化是元智能的自然产出
 situations:
 - id: f6a7b8c9-d0e1-2345-fabc-456789012345
   name: meta
@@ -37,41 +72,6 @@ intentions:
     name: low
     label: 低
     description: 方向明确（合并回元职能、缩写规则归并）
-schemas:
-- usage: 适用于治理者评估系统成熟度时参考
-  entities:
-  - name: 元智能
-    attributes:
-    - 标准化
-    - 自我维护
-  - name: 系统
-    attributes:
-    - 成熟度
-    - 规则依赖
-  causals:
-  - condition: 元智能成熟
-    outcome: 系统自我维护
-  - condition: 元智能不成熟
-    outcome: 规则依赖人工维护
-  boundaries:
-  - 适用于系统治理体系
-  - 排除一次性规则制定
-  - 需要系统运行至少三个月有足够演化数据
-  properties:
-  - key: 治理目标
-    value: 系统自我维护
-  dynamics:
-  - key: 成熟度演化
-    value: 随迭代递增
-  mappings:
-  - intent: 建立标准化
-    action: 归并冗余规则集
-  - intent: 提升系统成熟度
-    action: 培养元智能而非推动标准化本身
-  biases:
-  - id: f5a6b7c8-d9e0-1234-6789-012345678901
-    belief: 标准化是终点工作
-    fact: 标准化是元智能的自然产出
 thoughts:
 - 2026-06-01.md
 - 2026-06-02.md

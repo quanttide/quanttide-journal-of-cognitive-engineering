@@ -1,3 +1,38 @@
+schemas:
+- usage: 适用于高压工作者自我状态检视时参考
+  entities:
+  - name: 元意图
+    attributes:
+    - 可持续性
+    - 维护状态
+  - name: 工作意图
+    attributes:
+    - 探索状态
+    - 产出质量
+  causals:
+  - condition: 元意图得到维护
+    outcome: 工作意图可持续运作
+  - condition: 元意图被忽视
+    outcome: 高压探索产生无意义感
+  boundaries:
+  - 适用于高压探索阶段
+  - 排除短期冲刺场景
+  - 需要操作者对自身状态有觉察能力
+  properties:
+  - key: 恢复成本
+    value: 高
+  dynamics:
+  - key: 维护频率
+    value: 每日
+  mappings:
+  - intent: 保持心理可持续
+    action: 早睡早起并切换到低耗能模式
+  - intent: 对冲无意义感
+    action: 执行整合
+  biases:
+  - id: c2d3e4f5-a6b7-8901-def2-345678901234
+    belief: 高压探索必须牺牲健康
+    fact: 元意图保障可维持长期产出
 situations:
 - id: c9d0e1f2-a3b4-5678-cdef-789012345678
   name: health
@@ -47,41 +82,6 @@ intentions:
     name: medium
     label: 中
     description: 无意义感是高压探索的固有产物，无法完全消除只能对冲
-schemas:
-- usage: 适用于高压工作者自我状态检视时参考
-  entities:
-  - name: 元意图
-    attributes:
-    - 可持续性
-    - 维护状态
-  - name: 工作意图
-    attributes:
-    - 探索状态
-    - 产出质量
-  causals:
-  - condition: 元意图得到维护
-    outcome: 工作意图可持续运作
-  - condition: 元意图被忽视
-    outcome: 高压探索产生无意义感
-  boundaries:
-  - 适用于高压探索阶段
-  - 排除短期冲刺场景
-  - 需要操作者对自身状态有觉察能力
-  properties:
-  - key: 恢复成本
-    value: 高
-  dynamics:
-  - key: 维护频率
-    value: 每日
-  mappings:
-  - intent: 保持心理可持续
-    action: 早睡早起并切换到低耗能模式
-  - intent: 对冲无意义感
-    action: 执行整合
-  biases:
-  - id: c2d3e4f5-a6b7-8901-def2-345678901234
-    belief: 高压探索必须牺牲健康
-    fact: 元意图保障可维持长期产出
 thoughts:
 - 2026-06-01.md
 - 2026-06-02.md
