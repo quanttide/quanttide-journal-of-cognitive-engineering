@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.2.0] - 2026-08-19
+
+### Added
+
+- World-based directory structure: `default/` + `quanttide-{business,data,meta,org,product,sale,strategy,think,write}`
+- Daily markdown logs per world (2026-08-14 ~ 2026-08-19, 44 entries)
+- Raw thought records in daily logs, replacing the weekly YAML format
+
+### Fixed
+
+- Correct term: 文导小组 → 无领导小组 (leaderless group discussion)
+
 ## [0.1.0] - 2026-06-10
 
 ### Added
