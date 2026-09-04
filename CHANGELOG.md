@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.3.1] - 2026-09-04
+
+### Added
+
+- Daily markdown logs per world (2026-09-01 ~ 2026-09-04, 19 entries across 15 worlds)
+- 4 new worlds: `quanttide-{execute,finance,founder,health}`
+- New entries in existing worlds: `quanttide-{agent,docs,growth,human,market,meta,org,pay,product,tech,think}`
+
 ## [0.3.0] - 2026-09-04
 
 ### Added
